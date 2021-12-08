@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 107835251}
   m_Layer: 0
   m_Name: Ball 5
-  m_TagString: Basketball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,6 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 0
+  ballType: 
 --- !u!1 &130307964
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +427,7 @@ GameObject:
   - component: {fileID: 130307968}
   - component: {fileID: 130307967}
   - component: {fileID: 130307966}
+  - component: {fileID: 130307969}
   m_Layer: 0
   m_Name: hoopPoints
   m_TagString: Untagged
@@ -510,6 +513,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130307964}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &130307969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130307964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalPoints: 1
+  ballType: Basket
 --- !u!1001 &156839875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1186,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -516098083770646512, guid: 42d33ec30ef97a54e9c572c3ab8fa177, type: 3}
       propertyPath: m_Name
-      value: ScoreBoard
+      value: Skeeball ScoreBoard
       objectReference: {fileID: 0}
     - target: {fileID: -10858253889865538, guid: 42d33ec30ef97a54e9c572c3ab8fa177, type: 3}
       propertyPath: m_Enabled
@@ -1277,6 +1294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 100
+  ballType: Skee
 --- !u!136 &368635044
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1303,6 +1322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 100
+  ballType: Skee
 --- !u!136 &368635046
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1329,6 +1350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 50
+  ballType: Skee
 --- !u!136 &368635048
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1355,6 +1378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 40
+  ballType: Skee
 --- !u!136 &368635050
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1381,6 +1406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 30
+  ballType: Skee
 --- !u!136 &368635052
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1407,6 +1434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 20
+  ballType: Skee
 --- !u!136 &368635054
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1433,6 +1462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 10
+  ballType: Skee
 --- !u!136 &368635056
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1447,6 +1478,25 @@ CapsuleCollider:
   m_Height: 2.0000002
   m_Direction: 1
   m_Center: {x: -9.876005, y: -5.0146704, z: 0.52590895}
+--- !u!1 &368635057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 42d33ec30ef97a54e9c572c3ab8fa177, type: 3}
+  m_PrefabInstance: {fileID: 368635035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &368635058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368635057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bac9061049c08847b8fbdf6d7e5cd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointType: Skee
+  scoreBoard: {fileID: 532515453}
 --- !u!1 &378961844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,14 +1806,14 @@ RectTransform:
   m_GameObject: {fileID: 532515451}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5296512, y: 0.5296512, z: 0.5296512}
   m_Children: []
   m_Father: {fileID: 1832224242}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.9, y: 1.1}
+  m_AnchoredPosition: {x: -27, y: 1.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &532515453
@@ -1799,7 +1849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 00
+  m_Text: 1234
 --- !u!222 &532515454
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1813,15 +1863,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1971638946}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.42101014
+      value: 0.42101017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalScale.y
@@ -1829,19 +1879,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.42101014
+      value: 0.42101017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.253868
+      value: -0.97713184
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 0.668
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.367368
+      value: 0.006368041
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2005,7 +2055,7 @@ GameObject:
   - component: {fileID: 843645235}
   m_Layer: 0
   m_Name: Ball 6
-  m_TagString: Basketball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2221,6 +2271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 0
+  ballType: 
 --- !u!1 &851983613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,7 +2290,7 @@ GameObject:
   - component: {fileID: 851983620}
   m_Layer: 0
   m_Name: Ball 4
-  m_TagString: Basketball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2454,6 +2506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 0
+  ballType: 
 --- !u!1 &885125393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2541,7 @@ Transform:
   - {fileID: 892049468}
   - {fileID: 1523566259}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &892049463
 GameObject:
@@ -2730,9 +2784,10 @@ GameObject:
   - component: {fileID: 1057678554}
   - component: {fileID: 1057678557}
   - component: {fileID: 1057678556}
+  - component: {fileID: 1057678558}
   - component: {fileID: 1057678555}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2801,7 +2856,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1057678556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1057678558}
+        m_TargetAssemblyTypeName: RemoveBarriorOnTimer, Assembly-CSharp
+        m_MethodName: StartCountDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1057678556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2840,6 +2907,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057678553}
   m_CullTransparentMesh: 1
+--- !u!114 &1057678558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057678553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0551928b7eb8a7e4d88780738d0b3610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 60
+  timerMax: 60
+  gameBarrior: {fileID: 2130920286}
 --- !u!1 &1058945579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,9 +3158,10 @@ GameObject:
   - component: {fileID: 1135865512}
   - component: {fileID: 1135865515}
   - component: {fileID: 1135865514}
+  - component: {fileID: 1135865516}
   - component: {fileID: 1135865513}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3147,7 +3230,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1135865514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135865516}
+        m_TargetAssemblyTypeName: RemoveBarriorOnTimer, Assembly-CSharp
+        m_MethodName: StartCountDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1135865514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,6 +3281,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135865511}
   m_CullTransparentMesh: 1
+--- !u!114 &1135865516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135865511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0551928b7eb8a7e4d88780738d0b3610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 60
+  timerMax: 60
+  gameBarrior: {fileID: 403035884}
 --- !u!1 &1150674587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,7 +4534,7 @@ Transform:
   - {fileID: 246320987}
   - {fileID: 378961845}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 127.468, y: -277.751, z: -67.366}
 --- !u!1 &1310749411 stripped
 GameObject:
@@ -5448,7 +5558,7 @@ GameObject:
   - component: {fileID: 1553078149}
   m_Layer: 0
   m_Name: Ball 2
-  m_TagString: Basketball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5664,6 +5774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 0
+  ballType: 
 --- !u!1 &1562831458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 366060748317029752, guid: cc54dbe379155484589a32fbade3205d, type: 3}
@@ -5695,6 +5807,7 @@ GameObject:
   - component: {fileID: 1569405136}
   - component: {fileID: 1569405135}
   - component: {fileID: 1569405134}
+  - component: {fileID: 1569405138}
   m_Layer: 0
   m_Name: Basketball Score
   m_TagString: Untagged
@@ -5709,14 +5822,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569405132}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.70710677, z: -0.70710677, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.114943594, y: 0.114943594, z: 0.114943594}
   m_Children:
   - {fileID: 1723624508}
   m_Father: {fileID: 1310749412}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 90, z: -270}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.58}
@@ -5802,6 +5915,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1569405138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569405132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bac9061049c08847b8fbdf6d7e5cd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointType: Basket
+  scoreBoard: {fileID: 1723624509}
 --- !u!1 &1593854267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6415,7 +6542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 00
+  m_Text: 61
 --- !u!222 &1723624510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6441,7 +6568,7 @@ GameObject:
   - component: {fileID: 1770856167}
   m_Layer: 0
   m_Name: Ball 1
-  m_TagString: Basketball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6657,6 +6784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 0
+  ballType: 
 --- !u!1 &1802934692
 GameObject:
   m_ObjectHideFlags: 0
@@ -7492,7 +7621,7 @@ Transform:
   - {fileID: 1110464277}
   - {fileID: 1264193661}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971638945
 GameObject:
@@ -7521,9 +7650,10 @@ Transform:
   m_LocalPosition: {x: 9.231, y: 0.382, z: 1.361}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 622752348}
   - {fileID: 2108932438}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2009154588
 GameObject:
@@ -7542,7 +7672,7 @@ GameObject:
   - component: {fileID: 2009154595}
   m_Layer: 0
   m_Name: Ball 3
-  m_TagString: Basketball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7758,6 +7888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd830ab7645f2c44783e4158709fd189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalPoints: 0
+  ballType: 
 --- !u!1 &2029950287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1123060449699635870, guid: 3d1fa5671f91dd94bacc10b4dd49e568, type: 3}
@@ -7811,7 +7943,7 @@ Transform:
   - {fileID: 107835245}
   - {fileID: 843645229}
   m_Father: {fileID: 1971638946}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130920286 stripped
 GameObject:

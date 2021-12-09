@@ -2537,8 +2537,8 @@ Transform:
   m_Children:
   - {fileID: 1660858620}
   - {fileID: 1482541501}
-  - {fileID: 1401085768}
   - {fileID: 892049468}
+  - {fileID: 1401085768}
   - {fileID: 1523566259}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2711,7 +2711,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 885125394}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947812848
 GameObject:
@@ -3849,7 +3849,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 40
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
   m_KeepSelectedTargetValid: 1
@@ -4872,7 +4872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1401085764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5023,7 +5023,7 @@ Transform:
   m_Children:
   - {fileID: 1715756969}
   m_Father: {fileID: 885125394}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1415165689 stripped
 Transform:
@@ -7120,7 +7120,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 40
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
   m_KeepSelectedTargetValid: 1
